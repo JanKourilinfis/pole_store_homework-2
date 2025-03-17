@@ -13,10 +13,10 @@ poleCen.push(pridaniCena)
 }
 else if(akce=("odebrat")){
 var odebraniProdukt=prompt("jaký produkt chcete odebrat???")
-var odebProd=Number(alert(polePolozek.indexOf(odebraniProdukt)))
+var odebProd=Number(polePolozek.indexOf(odebraniProdukt))
 polePolozek.splice(odebProd,1)
 var odebraniCena=prompt("jakou cenu tohoto produktu chcete odebrat???")
-var odebCena=Number(alert(poleCen.indexOf(odebraniCena)))
+var odebCena=Number(poleCen.indexOf(odebraniCena))
 poleCen.splice(odebCena,1)
 }
 var vypis=prompt("chcete vypsat produkty i ceny ???")

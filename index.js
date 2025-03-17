@@ -7,24 +7,24 @@ var poleCen=ceny.split(",")
 var akce=prompt("jakou akci chcete provézt")
 if(akce==("přidat")){
 var pridaniProdukt=prompt("jaký produkt chcete přidat")
-alert(polePolozek.push(pridaniProdukt))
+polePolozek.push(pridaniProdukt)
 var pridaniCena=prompt("jakou cenu tohoto produktu chcete přidat???")
-alert(poleCen.push(pridaniCena))
+poleCen.push(pridaniCena)
 }
 else if(akce=("odebrat")){
 var odebraniProdukt=prompt("jaký produkt chcete odebrat???")
 var odebProd=Number(alert(polePolozek.indexOf(odebraniProdukt)))
-alert(pole.splice(odebProd,1))
+polePolozek.splice(odebProd,1)
 var odebraniCena=prompt("jakou cenu tohoto produktu chcete odebrat???")
 var odebCena=Number(alert(poleCen.indexOf(odebraniCena)))
-alert(poleCen.splice(odebCena,1))
+poleCen.splice(odebCena,1)
 }
 var vypis=prompt("chcete vypsat produkty i ceny ???")
 if(vypis==("ano")){
 for(var i=0; i<polePolozek.length; i++){
 alert(polePolozek[i])
 }
-for(var j=0; i<poleCen.length; j++){
+for(var j=0; j<poleCen.length; j++){
 alert(poleCen[j])
 }
 }
